@@ -1,16 +1,22 @@
 {
-    "name": "chumper/zipper",
+    "name": "64robots/zipper",
     "type": "library",
     "description": "This is a little neat helper for the ZipArchive methods with handy functions",
     "keywords": ["laravel", "ZIP", "Archive"],
-    "homepage": "http://github.com/Chumper/zipper",
+    "homepage": "http://github.com/64robots/zipper",
     "license": "Apache2",
     "authors": [
         {
             "name": "Nils Plaschke",
             "email": "github@nilsplaschke.de",
             "homepage": "http://nilsplaschke.de",
-            "role": "Developer"
+            "role": "Creator"
+        },
+        {
+            "name": "64 Robots Team",
+            "email": "jon@64robots",
+            "homepage": "https://64robots.com",
+            "role": "Maintaining Developers"
         }
     ],
     "require": {
@@ -25,12 +31,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Chumper\\Zipper\\": "src/Chumper/Zipper"
+            "R64\\Zipper\\": "src/R64/Zipper"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Chumper\\Zipper\\": "tests/"
+            "R64\\Zipper\\": "tests/"
         }
     },
     "config": {
@@ -39,10 +45,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Chumper\\Zipper\\ZipperServiceProvider"
+                "R64\\Zipper\\ZipperServiceProvider"
             ],
             "aliases": {
-                "Zipper": "Chumper\\Zipper\\Zipper"
+                "Zipper": "R64\\Zipper\\Zipper"
             }
         }
     },

@@ -1,6 +1,6 @@
 <?php
 
-namespace Chumper\Zipper;
+namespace R64\Zipper;
 
 use Illuminate\Foundation\AliasLoader;
 use Illuminate\Support\ServiceProvider;
@@ -27,14 +27,14 @@ class ZipperServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->singleton('zipper', function ($app) {
-            $return = $app->make('Chumper\Zipper\Zipper');
+            $return = $app->make('R64\Zipper\Zipper');
 
             return $return;
         });
 
         $this->app->booting(function () {
             $loader = AliasLoader::getInstance();
-            $loader->alias('Zipper', 'Chumper\Zipper\Facades\Zipper');
+            $loader->alias('Zipper', 'R64\Zipper\Facades\Zipper');
         });
     }
 

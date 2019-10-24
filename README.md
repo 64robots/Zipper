@@ -7,7 +7,7 @@ Feel free to read the code, to fork it or to use it in whatever way you want.
 
 # Zipper
 
-[![Build Status](https://travis-ci.org/Chumper/Zipper.png)](https://travis-ci.org/Chumper/Zipper)
+[![Build Status](https://travis-ci.org/R64/Zipper.png)](https://travis-ci.org/R64/Zipper)
 
 This is a simple Wrapper around the ZipArchive methods with some handy functions.
 
@@ -20,8 +20,8 @@ This is a simple Wrapper around the ZipArchive methods with some handy functions
 
 3. Go to `app/config/app.php`
 
-  * add to providers `Chumper\Zipper\ZipperServiceProvider::class`
-  * add to aliases `'Zipper' => Chumper\Zipper\Zipper::class`
+  * add to providers `R64\Zipper\ZipperServiceProvider::class`
+  * add to aliases `'Zipper' => R64\Zipper\Zipper::class`
 
 You can now access Zipper with the `Zipper` alias.
 
@@ -34,7 +34,7 @@ Zipper::make('public/test.zip')->add($files)->close();
 
 ## Another example
 ```php
-$zipper = new \Chumper\Zipper\Zipper;
+$zipper = new \R64\Zipper\Zipper;
 
 $zipper->make('test.zip')->folder('test')->add('composer.json');
 $zipper->zip('test.zip')->folder('test')->add('composer.json','test');

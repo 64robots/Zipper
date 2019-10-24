@@ -1,6 +1,6 @@
 <?php
 
-namespace Chumper\Zipper\Repositories;
+namespace R64\Zipper\Repositories;
 
 use Exception;
 use Mockery;
